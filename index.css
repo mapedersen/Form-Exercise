@@ -29,6 +29,10 @@ form input {
     border-radius: 3px;
 }
 
+.error {
+    background-color: #ff000047;
+}
+
 button {
     padding: 15px;
     margin: 10px;
