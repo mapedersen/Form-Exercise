@@ -4,6 +4,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const passwordField = form.elements['password'];
     const confirmPasswordField = form.elements['confirmPassword'];
 
+    const validatePassword = () => {
+        // Remove error class if password length is at least 8 characters
+        if (passwordField.value.length >= 8) {
+            passwordField.classList.remove('error');
+        }
+        
+        // Remove error class if passwords match
+        if (passwordField.value === confirmPasswordField.value) {
+            confirmPasswordField.classList.remove('error');
+        }
+    };
+
+    passwordField.addEventListener('input', validatePassword);
+    confirmPasswordField.addEventListener('input', validatePassword);
+
     form.addEventListener('submit', function(event){
         event.preventDefault();
         
