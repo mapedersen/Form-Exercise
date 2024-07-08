@@ -1,0 +1,48 @@
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', 'Times New Roman', Times, serif;
+    background-color: blanchedalmond;
+}
+
+fieldset {
+    background-color: #00000008;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+form input {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+button {
+    padding: 15px;
+    margin: 10px;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.message {
+    display: none;
+    color: green;
+    margin-top: 10px;
+    text-align: center;
+}

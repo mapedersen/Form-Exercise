@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Account Registration</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Account Registration</h1>
+    </header>
+
+    <fieldset>
+        <legend>Accountdata</legend>
+        <form id="accountform">
+            <label for="name">Name</label>
+            <input required id="name" type="text" placeholder="Name">
+
+            <label for="username">Username</label>
+            <input required id="username" type="text" placeholder="Username" />
+
+            <label for="email">Email</label>
+            <input required id="email" type="email" placeholder="email" />
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" id="password" minlength="8" required/>
+
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" name="confirmPassword" id="confirmPassword" minlength="8" required />
+
+            <button type="submit">Create account</button>
+        </form>
+        <div class="message" id="message">Account Created</div>
+    </fieldset>
+
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
