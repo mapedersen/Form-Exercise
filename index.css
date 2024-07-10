@@ -16,6 +16,10 @@ fieldset {
     border-radius: 4px;
 }
 
+#accountform {
+    min-width: 350px;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -29,9 +33,6 @@ form input {
     border-radius: 3px;
 }
 
-.error {
-    background-color: #ff000047;
-}
 
 button {
     padding: 15px;
@@ -48,4 +49,14 @@ button {
     color: green;
     margin-top: 10px;
     text-align: center;
+}
+
+.error {
+    background-color: #ff000047;
+}
+
+.error-message {
+    display: none;
+    color: red;
+    padding: 10px;
 }
